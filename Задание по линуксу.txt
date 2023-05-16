@@ -1,0 +1,55 @@
+localhost:~# pwd
+/root
+localhost:~# mkdir "Игрушки для школьников" "Игрушки для дошколят"
+localhost:~# ls
+bench.py                 home                     Игрушки для школьников
+hello.c                  readme.txt
+hello.js                 Игрушки для дошколят
+localhost:~# cd "Игрушки для школьников"
+localhost:~/Игрушки для школьников# touch "Роботы.txt" "Конструктор.txt" "Настольные игры.txt"
+localhost:~/Игрушки для школьников# ls
+Конструктор.txt     Настольные игры.txt  Роботы.txt
+localhost:~/Игрушки для школьников# cd ..
+localhost:~# cd "Игрушки для дошколят"
+localhost:~/Игрушки для дошколят# ls
+localhost:~/Игрушки для дошколят# touch "Мягкие игрушки.txt" "Куклы.txt" "Машинки.txt"
+localhost:~/Игрушки для дошколят# ls
+Куклы.txt           Машинки.txt         Мягкие игрушки.txt
+
+localhost:~# mkdir "Имя Игрушки"
+localhost:~# ls
+bench.py                 home                     Игрушки для школьников
+hello.c                  readme.txt               Имя Игрушки
+hello.js                 Игрушки для дошколят
+localhost:~# cp -r  "Игрушки для дошколят"  "Имя Игрушки"
+localhost:~# cp -r  "Игрушки для школьников"  "Имя Игрушки"
+localhost:~# cd "Имя Игрушки"
+localhost:~/Имя Игрушки# ls
+Игрушки для дошколят     Игрушки для школьников
+localhost:~/Имя Игрушки# cd "Игрушки для дошколят"
+localhost:~/Имя Игрушки/Игрушки для дошколят# ls
+Куклы.txt           Машинки.txt         Мягкие игрушки.txt
+localhost:~/Имя Игрушки/Игрушки для дошколят# cd ..
+localhost:~/Имя Игрушки# cd "Игрушки для школьников"
+localhost:~/Имя Игрушки/Игрушки для школьников# ls
+Конструктор.txt     Настольные игры.txt  Роботы.txt
+
+localhost:~/Имя Игрушки/Игрушки для школьников# cd ..
+localhost:~/Имя Игрушки# cd ..
+localhost:~# mv "Имя Игрушки" "Игрушки"
+localhost:~# ls
+bench.py                 home                     Игрушки для дошколят
+hello.c                  readme.txt               Игрушки для школьников
+hello.js                 Игрушки
+localhost:~# rm -r "Игрушки для дошколят"
+localhost:~# rm -r "Игрушки для школьников"
+localhost:~# ls
+bench.py    hello.c     hello.js    home        readme.txt  Игрушки
+localhost:~#
+
+
+
+
+
+
+
