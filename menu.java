@@ -12,6 +12,8 @@ public class menu {
         case 3:System.out.println("Создается набор выигранных игрушек"); break;
         case 4:System.out.println("Хотите добавить еще одну игрушку к набору выигранных игрушек? y/n"); break;
         case 5:System.out.println("Хотите забрать выигранную игрушку из набора? y/n"); break;
+        case 51:System.out.println("Хотите забрать еще выигранную игрушку из набора? y/n"); break;
+        case 52:System.out.println("Выигранные игрушки закончились");break;
         case 6:System.out.println("Выход из программы"); 
     }
    

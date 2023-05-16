@@ -44,11 +44,26 @@ public class Controller {
     System.out.println("Набор выигранных игрушек: "+main.allToyPrize);              
     }
     
-    public static void getPrizeList(ArrayList<BaseToy> allArrayList){
-
-     allArrayList.remove(0);
+    public static void getPrizeList(ArrayList<BaseToy> allArrayList, char i){
+        Scanner input = new Scanner(System.in);
+        
+        while (i=='y'){
+            allArrayList.remove(0);
      
-     System.out.println("В наборе остались: "+main.allToyPrize);
+            System.out.println("В наборе остались: "+main.allToyPrize);
+            if (allArrayList.isEmpty()){
+                i='n';
+            menu.dialog_menu(52);
+            
+        }
+        else{
+            menu.dialog_menu(51);
+            
+            i=input.next().charAt(0);
+        }
+    }
+
+     
     }
 
     public static void AddToy(ArrayList<BaseToy> allArrayList){

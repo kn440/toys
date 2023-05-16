@@ -23,25 +23,20 @@ public class main {
         if (yes_no=='y'){
             Controller.ChangeGrade();
         }
-        
         menu.dialog_menu(3);
         Controller.init();
-        
-        
         menu.dialog_menu(4);
         yes_no= input.next().charAt(0);
         if (yes_no=='y'){
             Controller.AddToy(allToyPrize);
         }
-        
         menu.dialog_menu(5);
         yes_no= input.next().charAt(0);
         if (yes_no=='y'){
-            Controller.getPrizeList(allToyPrize);
+            Controller.getPrizeList(allToyPrize, yes_no);
         }
        
         menu.dialog_menu(6);
-        
         System.exit(0);
         
     }
